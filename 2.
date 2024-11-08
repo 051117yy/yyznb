@@ -1,0 +1,51 @@
+1.1 1
+tuple = (10, "orange", 3.14, yy)
+print tuple[0]
+print tuple[1]
+print tuple[2]
+print tuple[3]
+
+tuple = (10, ["grape", "orange"], 3.14, yy)
+tuple[1][0] = "apple"
+print tuple
+1.1 2
+student_scores = {}
+
+student_scores["yy"] = 85
+student_scores["wyl"] = 92
+student_scores["ly"] = 78
+
+student_scores["yy"] = 88
+
+del student_scores["wyl"]
+
+print("学生分数表：")
+for student, score in student_scores.items():
+    print(f"{student}: {score}")
+1.1 3
+list1 = [1, 2, 3, 4, 5,6,7,8]
+list2 = [3,4, 5, 6, 7, 8,9]
+
+set1 = set(list1)
+set2 = set(list2)
+
+a = set1 & set2
+
+b = set1 | set2
+
+print("列表1:", list1)
+print("列表2:", list2)
+print("交集:", a)
+print("并集:", b)
+1.3 1
+def reverse_words_in_string(string):
+    words = string.split(" ")
+    reversed_words = [word[::-1] for word in words]
+    return " ".join(reversed_words)
+1.3 2
+name = "杨熠"
+age = 18
+profession = "初级工程师"
+
+introduction = "我的姓名是 %s，年龄是 %d 岁，职业是 %s。" % (name, age, profession)
+print(introduction)
